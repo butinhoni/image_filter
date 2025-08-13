@@ -1,5 +1,4 @@
 from PIL import Image
-
 # caminhos das imagens
 foto_path = "img/memphis.jpg"
 overlay_path = "img/img_rosa.png"
