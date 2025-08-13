@@ -181,3 +181,4 @@ cython_debug/
 .cursorindexingignore
 pronta.png
 pronta.png
+/prontas

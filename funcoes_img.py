@@ -1,9 +1,10 @@
 from PIL import Image
+
 # caminhos das imagens
 foto_path = "img/memphis.jpg"
 overlay_path = "img/img_rosa.png"
 
-def gerar_foto(foto_path, overlay_path):
+def gerar_foto(foto_path, overlay_path, savepath):
     foto = Image.open(foto_path).convert("RGBA")
     overlay = Image.open(overlay_path).convert("RGBA")
 
@@ -28,4 +29,5 @@ def gerar_foto(foto_path, overlay_path):
     resultado = Image.alpha_composite(resultado_base, overlay)
 
     # salvar resultado final
-    resultado.save("pronta.png")
+    
+    resultado.save(savepath)
