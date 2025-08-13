@@ -2,6 +2,7 @@ import streamlit as st
 from funcoes_img import gerar_foto
 import uuid
 from pathlib import Path
+import os
 
 h1, h2 = st.columns(2)
 h1.image('img/logoevvia.png')
@@ -14,7 +15,7 @@ if 'existe' not in st.session_state:
 if 'num' not in st.session_state:
     st.session_state['num'] = str(uuid.uuid1())
 
-filepath = f'prontas/{st.session_state["num"]}.png'
+filepath = os.path.join('prontas', f"{st.session_state['num']}.png")
 
 #upa foto
 foto = st.file_uploader('Selecione sua foto', type=['png','jpg','jpeg'])
