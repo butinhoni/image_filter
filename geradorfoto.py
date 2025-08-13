@@ -2,8 +2,9 @@ import streamlit as st
 from funcoes_img import gerar_foto
 
 h1, h2 = st.columns(2)
-h1.image('img/logoevvia.jpeg')
-h2.title('Fotos Evvia')
+h1.image('img/logoevvia.png')
+h2.title('Faça sua foto')
+h2.header('Agosto Lilás')
 
 if 'existe' not in st.session_state:
     st.session_state['existe'] = False
