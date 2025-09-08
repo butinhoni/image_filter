@@ -7,7 +7,9 @@ import os
 h1, h2 = st.columns(2)
 h1.image('img/logoevvia.png')
 h2.title('Faça sua foto')
-h2.header('Agosto Lilás')
+h2.header('Setembro Amarelo')
+
+st.set_page_config('Evvia | Fotos', page_icon='img/logoevvia.png', layout='centered')
 
 if 'existe' not in st.session_state:
     st.session_state['existe'] = False
